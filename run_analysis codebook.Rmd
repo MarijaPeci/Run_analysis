@@ -1,0 +1,35 @@
+---
+title: "run_analysis code book"
+author: "Marija Peci"
+date: '2020-09-24'
+output: html_document
+---
+---
+title: "run_analysis.R code book"
+output: html_notebook
+---
+==Notes on the data==
+
+The variables are based on "Human Activity Recognition Using Smartphones Dataset, Version 1.0"[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip] data by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+
+Full variable names are described in the original file.
+
+Additional variables used in extracted_df and second_dt data tables created in the run_analysis script:
+
+
+- 'type' - original data from which the values were extracted.
+        "test" - extracted from "UCI...test" folder
+        "train" - extracted from "UCI...train" folder
+- 'subject' - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'activity' - Activity name.
+        1 WALKING
+        2 WALKING_UPSTAIRS
+        3 WALKING_DOWNSTAIRS
+        4 SITTING
+        5 STANDING
+        6 LAYING
