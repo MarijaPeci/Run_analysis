@@ -75,7 +75,7 @@ for (i in 1: nrow(extracted_dt)){
 View(extracted_dt)
 
 #5 - "From the data set in step 4, creates a second, independent tidy data set 
-# with the average of each variable for each activity and each subject."
+# with the average of each variable for each activity and each subject. "
 
 second_dt <- extracted_dt[, lapply(.SD, "mean", -1), 
                           by= c("subject", "activity"), 
