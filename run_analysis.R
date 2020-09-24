@@ -80,6 +80,8 @@ View(extracted_dt)
 second_dt <- extracted_dt[, lapply(.SD, "mean", -1), 
                           by= c("subject", "activity"), 
                           .SDcols = 4:length(cols)]
-View(second_dt)
+second_dt<- arrange(second_dt, subject, .by_group = TRUE)
+
+write.table(second_dt, file = "second_dt.txt", row.names = FALSE)
 
 
